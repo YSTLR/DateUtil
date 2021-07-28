@@ -25,7 +25,7 @@ public class HandleDate {
 
     /**
      * 工具方法：判断日期是否跨周
-     * @param date 传入当前日期
+     * @param startTime,endTime 传入当前日期
      * @return
      */
     public static boolean acrossWeek(String startTime,String endTime) throws ParseException {
@@ -41,7 +41,7 @@ public class HandleDate {
 
     /**
      * 工具方法：判断日期是否跨月
-     * @param date 传入当前日期
+     * @param startTime,endTime 传入当前日期
      * @return
      */
     public static boolean acrossMonth(String startTime,String endTime) throws ParseException {
@@ -88,7 +88,7 @@ public class HandleDate {
 
     /**
      * 工具方法：获取当前日期上周日的日期，返回yyyyMMdd
-     * @param date 传入当前日期
+     * @param handle 传入当前日期
      * @return
      */
     public static String getSundayBeforeThisWeek(String handle) throws ParseException {
@@ -112,7 +112,7 @@ public class HandleDate {
 
     /**
      * 工具方法：获取当前月的上一个月，返回yyyyMM
-     * @param date 传入当前日期
+     * @param handle 传入当前日期
      * @return
      */
     public static String getMonthBeforeThisMonth(String handle) throws ParseException {
@@ -169,7 +169,7 @@ public class HandleDate {
 
     /**
      * 工具方法：判断某日期是否为周日
-     * @param date 传入当前日期
+     * @param handle 传入当前日期
      * @return
      */
     public static boolean isSunday(String handle) throws ParseException {
@@ -186,7 +186,7 @@ public class HandleDate {
 
     /**
      * 工具方法：判断某日期是否为周一
-     * @param date 传入当前日期
+     * @param handle 传入当前日期
      * @return
      */
     public static boolean isMonday(String handle) throws ParseException {
@@ -203,7 +203,7 @@ public class HandleDate {
 
     /**
      * 工具方法：判断某日期是否为每月最后一天
-     * @param date 传入当前日期
+     * @param handle 传入当前日期
      * @return
      */
     public static boolean isLastdayOfMonth(String handle) throws ParseException {
